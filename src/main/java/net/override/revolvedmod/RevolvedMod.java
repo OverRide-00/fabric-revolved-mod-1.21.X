@@ -2,6 +2,9 @@ package net.override.revolvedmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.override.revolvedmod.block.ModBlocks;
+import net.override.revolvedmod.item.ModItemGroups;
+import net.override.revolvedmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,9 @@ public class RevolvedMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

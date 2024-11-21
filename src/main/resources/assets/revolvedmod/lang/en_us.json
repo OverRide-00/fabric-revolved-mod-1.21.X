@@ -1,0 +1,12 @@
+{
+  "item.revolvedmod.silver_ingot": "Silver Ingot",
+  "item.revolvedmod.silver_nugget": "Silver Nugget",
+  "item.revolvedmod.raw_silver": "Raw Silver",
+
+  "block.revolvedmod.silver_ore": "Silver Ore",
+  "block.revolvedmod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.revolvedmod.block_of_raw_silver": "Block Of Raw Silver",
+  "block.revolvedmod.silver_block": "Silver Block",
+
+  "itemGroup.revolvedmod.custom_ores": "Custom Ores"
+}
