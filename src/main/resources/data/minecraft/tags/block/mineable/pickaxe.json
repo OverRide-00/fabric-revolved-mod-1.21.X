@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "revolvedmod:silver_block",
+    "revolvedmod:block_of_raw_silver",
+    "revolvedmod:silver_ore",
+    "revolvedmod:deepslate_silver_ore"
+  ]
+}

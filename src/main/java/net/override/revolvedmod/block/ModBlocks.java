@@ -3,6 +3,7 @@ package net.override.revolvedmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -10,21 +11,24 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.override.revolvedmod.RevolvedMod;
 
 public class ModBlocks {
     public static final Block SILVER_ORE = registerBlock("silver_ore",
-            new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool()
+                            .sounds(BlockSoundGroup.STONE)));
     public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
-            new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(4f).requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block SILVER_BLOCK = registerBlock("silver_block",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block BLOCK_OF_RAW_SILVER = registerBlock("block_of_raw_silver",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+                    .requiresTool().sounds(BlockSoundGroup.BASALT)));
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

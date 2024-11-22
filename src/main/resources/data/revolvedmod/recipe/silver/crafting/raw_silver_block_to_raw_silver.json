@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "revolvedmod:block_of_raw_silver"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "revolvedmod:raw_silver"
+  }
+}
